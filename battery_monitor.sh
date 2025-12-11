@@ -40,20 +40,20 @@ while true; do
     
     if [ "$status" = "Charging" ]; then
         if [ -n "$time" ]; then
-            msg="🔋 Battery: ${percentage}% - Charging (${time} until full)"
+            msg="Battery: ${percentage}% - Charging (${time} until full)"
         else
-            msg="🔋 Battery: ${percentage}% - Charging"
+            msg="Battery: ${percentage}% - Charging"
         fi
     elif [ "$status" = "Discharging" ]; then
         if [ -n "$time" ]; then
-            msg="🔋 Battery: ${percentage}% - Discharging (${time} remaining)"
+            msg="Battery: ${percentage}% - Discharging (${time} remaining)"
         else
-            msg="🔋 Battery: ${percentage}% - Discharging"
+            msg="Battery: ${percentage}% - Discharging"
         fi
     elif [ "$status" = "Full" ]; then
-        msg="🔋 Battery: ${percentage}% - Full"
+        msg="Battery: ${percentage}% - Full"
     else
-        msg="🔋 Battery: ${percentage}% - Unknown status"
+        msg="Battery: ${percentage}% - Unknown status"
     fi
     
     printf "\r%-80s" "$msg"
