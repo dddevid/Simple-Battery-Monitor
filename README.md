@@ -26,19 +26,19 @@ A lightweight bash script for monitoring battery status on Linux systems in real
 ### Run directly without downloading
 
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/dddevid/Simple-Battery-Monitor/refs/heads/main/battery_monitor.sh)
+bash <(curl -sL https://battery.devid.ink/battery_monitor.sh)
 ```
 
 Or with wget:
 
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/dddevid/Simple-Battery-Monitor/refs/heads/main/battery_monitor.sh)
+bash <(wget -qO- https://battery.devid.ink/battery_monitor.sh)
 ```
 
 ### Download and run
 
 ```bash
-curl -O https://raw.githubusercontent.com/dddevid/Simple-Battery-Monitor/refs/heads/main/battery_monitor.sh
+curl -O https://battery.devid.ink/battery_monitor.sh
 chmod +x battery_monitor.sh
 ./battery_monitor.sh
 ```
